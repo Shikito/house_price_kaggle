@@ -33,3 +33,8 @@ rm house-prices-advanced-regression-techniques.zip
 conda env export -n house_price_kaggle > house_price_kaggle.yml
 conda env update -f house_price_kaggle.yml
 ```
+## 使い方
+```shell
+cd src
+python main.py # 訓練データが表示されます
+```
