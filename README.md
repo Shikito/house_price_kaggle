@@ -18,4 +18,7 @@ activate house_price_kaggle
 pip install kaggle
 cd house_price_kaggle
 kaggle competitions download -c house-prices-advanced-regression-techniques
+Expand-Archive house-prices-advanced-regression-techniques.zip
+ren house-prices-advanced-regression-techniques input
+rm house-prices-advanced-regression-techniques.zip
 ```
