@@ -9,9 +9,7 @@
 1. 仮想環境のインストール
 ```shell
 $ cd house_price_kaggle
-$ (Get-Content -Path "house_price_kaggle.yml" -Encoding Default) -join "`n" ` 
- | % { [Text.Encoding]::UTF8.GetBytes($_) } `
- | Set-Content -Path "house_price_kaggle.yml" -Encoding Byte
+$ (Get-Content -Path "house_price_kaggle.yml" -Encoding Default) -join "`n" `  | % { [Text.Encoding]::UTF8.GetBytes($_) } ` | Set-Content -Path "house_price_kaggle.yml" -Encoding Byte
 $ conda env create -f house_price_kaggle.yml
 ```
 
