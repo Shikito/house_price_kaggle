@@ -23,3 +23,8 @@ $ Expand-Archive house-prices-advanced-regression-techniques.zip
 $ ren house-prices-advanced-regression-techniques input
 $ rm house-prices-advanced-regression-techniques.zip
 ```
+
+## 仮想環境の更新(パッケージの追加/削除を反映)
+```shell
+conda env update -f house_price_kaggle.yml
+```
