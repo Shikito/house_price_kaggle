@@ -9,7 +9,7 @@
 1. 仮想環境のインストール
 ```python
 cd house_price_kaggle
-conda env create -n house_price_kaggle -f house_price_kaggle.yml python=3.7
+conda env create -f=house_price_kaggle.yml
 ```
 
 2. データセットのインストール
