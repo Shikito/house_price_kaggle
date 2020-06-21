@@ -42,8 +42,8 @@ def _main():
     # ラベリング（＝DataFrameに含まれるObject型のSeriesを、Int型に変換する）
     train_x, test_x = labeling_dataset(train_x, test_x)
     
-    # print(train_x)
-    # print(test_x)
+    print(train_x)
+    print(test_x)
 
 if __name__=="__main__":
     _main()
