@@ -17,5 +17,5 @@ conda env create -f=house_price_kaggle.yml
 activate house_price_kaggle
 pip install kaggle
 cd house_price_kaggle
-kaggle competitions files -c house-prices-advanced-regression-techniques
+kaggle competitions download -c house-prices-advanced-regression-techniques
 ```
