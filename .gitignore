@@ -1,3 +1,4 @@
 sample_submission.csv
 input/*
 .vscode/settings.json
+src/utils/__pycache__/*.pyc
