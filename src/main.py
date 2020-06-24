@@ -5,6 +5,7 @@ from sklearn import preprocessing
 from utils.df_na import *
 print('takataka!!!!!')
 print('I am takamaster')
+print('takataka!!!!!2')
 def labeling_dataset(train_x, test_x):
     for i, dtype in enumerate(train_x.dtypes):
         if dtype == 'object':
