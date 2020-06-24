@@ -3,7 +3,7 @@ import numpy as np
 from sklearn import preprocessing
 
 from utils.df_na import *
-
+print('takatakataka!!!!')
 def labeling_dataset(train_x, test_x):
     for i, dtype in enumerate(train_x.dtypes):
         if dtype == 'object':
