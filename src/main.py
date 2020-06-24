@@ -31,6 +31,8 @@ def _main():
     train_x = pd.read_csv('../input/train.csv') 
     test_x = pd.read_csv('../input/test.csv')
 
+    print(train_x)
+
     #隣接した道路の長さ（LotFrontage）の欠損値の補完（後のfill_na関数は0埋めしてしまうが、道路の長さは意味が変わってくるので、例外的に処理する）
     train_x['LotFrontage'] = train_x.groupby('Neighborhood')['LotFrontage'].transform(lambda x: x.fillna(x.median()))
     test_x['LotFrontage'] = test_x.groupby('Neighborhood')['LotFrontage'].transform(lambda x: x.fillna(x.median()))
@@ -43,7 +45,6 @@ def _main():
     train_x, test_x = labeling_dataset(train_x, test_x)
     
     print(train_x)
-    print(test_x)
 
 if __name__=="__main__":
     _main()
